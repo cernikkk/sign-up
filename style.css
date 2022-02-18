@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&display=swap');
+
+:root {
+  --logo-size: 2.5rem;
+}
+
+body, p {
+  font-family: 'Assistant', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: var(--logo-size);
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  margin-top: 100px;
+  justify-content: center;
+  padding: 30px;
+}
+
+svg {
+  width: var(--logo-size);
+  height: var(--logo-size);
+}
+
+.left-side {
+  background-image: url("./background.jpg");
+  background-size: cover;
+  /* background-position: center center; */
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.right-side {
+  flex: 5;
+  background: red;
+}
